@@ -10,6 +10,11 @@ variable "subnet_a_cidr" {
   default     = "10.0.0.0/24"
 }
 
+variable "instance_region" {
+  description = "region of the instance"
+  type        = string
+}
+
 variable "subnet_b_cidr" {
   description = "CIDR block for the subnet B"
   type        = string

@@ -9,13 +9,14 @@ terraform {
 
 # Configure the AWS Provider
 provider "aws" {
-  region = "us-east-1"
+  region = var.instance_region
 }
 
 # Call VPC module
 module "vpc" {
   source = "./modules/vpc"
 
+  instance_region = var.instance_region
   security_group_ingress_cidr_block = var.security_group_ingress_cidr_block
 }
 

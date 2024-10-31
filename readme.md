@@ -27,7 +27,7 @@ This Terraform script will create the following resources:
 
    ```bash
    git clone https://github.com/ihusnainalii/Bastion-EC2-instance-using-Terraform.git
-   cd terraform-ec2-bastion-vpc
+   cd Bastion-EC2-instance-using-Terraform
    ```
 
 2. **Update variables**:\
